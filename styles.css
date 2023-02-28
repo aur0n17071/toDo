@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Shantell Sans', sans-serif;
+}
+button{
+    font-family: inherit;
+}
+input{
+    font-family: inherit;
+}
+
+.input{
+    max-width: 280px;
+    min-width: 10px;
+    padding-left: 5px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    height: 100vh;
+    border: 1px solid red;
+}
+.create-task-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.btn {
+    padding: 5px 10px;
+    background-color: rgb(0, 226, 87);
+}
+
+.filter-task-block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+.task-title {
+    align-self: center;
+}
+.input-field {
+    align-self: center;
+}
+.collection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    hyphens: auto;
+    padding-bottom: 5px;
+}
+.button-wrapper{
+    display: flex;
+    grid-gap: 15px;
+    align-self: center;
+}
+.remove-task{
+    position: relative;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.remove-task::after, .remove-task::before{
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 2px;
+    height: 20px;
+    background-color: black;
+}
+.remove-task::after{
+    transform: rotate(45deg);
+}
+.remove-task::before{
+    transform: rotate(140deg);
+}
+.edit-task{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(pencil.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.clear-tasks {
+    font-weight: 700;
+    padding: 5px 10px;
+    width: fit-content;
+    align-self: center;
+    background-color: brown;
+}
+.list-item{
+    display: flex;
+    gap: 15px;
+    padding-bottom: 5px;
+}
+.list-none{
+    display: none;
+}
