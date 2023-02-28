@@ -180,6 +180,7 @@ function filterTasks(event) {
         } else {
             item.classList.remove('list-item');
             item.classList.add('list-none')
+
         }
     })
 }
